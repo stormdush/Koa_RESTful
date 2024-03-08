@@ -1,0 +1,48 @@
+{
+    "port": "3000",
+    "env": "development",
+    "https": true,
+    "logger": {
+        "path": "logs",
+        "levels": {
+            "error": 0,
+            "warn": 1,
+            "info": 2,
+            "debug": 3
+        },
+        "transportsetting": {
+            "error": {
+                "filename": "logs/%DATE%-error.log",
+                "level": "error",
+                "datePattern": "YYYY-MM-DD",
+                "zippedArchive": true,
+                "maxSize": "20m",
+                "maxFiles": "7d"
+            },
+            "warn": {
+                "filename": "logs/%DATE%-warn.log",
+                "level": "warn",
+                "datePattern": "YYYY-MM-DD",
+                "zippedArchive": true,
+                "maxSize": "20m",
+                "maxFiles": "7d"
+            },
+            "info": {
+                "filename": "logs/%DATE%-info.log",
+                "level": "info",
+                "datePattern": "YYYY-MM-DD",
+                "zippedArchive": true,
+                "maxSize": "20m",
+                "maxFiles": "7d"
+            },
+            "debug": {
+                "filename": "logs/%DATE%-debug.log",
+                "level": "debug",
+                "datePattern": "YYYY-MM-DD",
+                "zippedArchive": true,
+                "maxSize": "20m",
+                "maxFiles": "7d"
+            }
+        }
+    }
+}

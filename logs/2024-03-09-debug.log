@@ -1,0 +1,149 @@
+2024-03-09 02:53:07 info: 	HTTPS server is running on port 3000
+2024-03-09 03:10:19 info: 	HTTPS server is running on port 3000
+2024-03-09 03:10:36 info: 	HTTPS server is running on port 3000
+2024-03-09 03:10:42 info: 	HTTPS server is running on port 3000
+2024-03-09 03:10:54 info: 	HTTPS server is running on port 3000
+2024-03-09 03:10:54 info: 	--- MongoDB connection successful ---
+2024-03-09 03:10:58 info: 	HTTPS server is running on port 3000
+2024-03-09 03:11:11 info: 	HTTPS server is running on port 3000
+2024-03-09 03:11:20 info: 	HTTPS server is running on port 3000
+2024-03-09 03:11:50 error: 	--- MongoDB connection failure ---
+2024-03-09 03:13:31 info: 	HTTPS server is running on port 3000
+2024-03-09 03:13:41 info: 	HTTPS server is running on port 3000
+2024-03-09 03:14:41 info: 	HTTPS server is running on port 3000
+2024-03-09 03:15:11 error: 	--- MongoDB connection failure ---
+2024-03-09 03:23:45 info: 	HTTPS server is running on port 3000
+2024-03-09 03:24:15 info: 	--- MongoDB connection successful ---
+2024-03-09 03:26:44 info: 	HTTPS server is running on port 3000
+2024-03-09 03:26:54 info: 	HTTPS server is running on port 3000
+2024-03-09 03:26:56 info: 	HTTPS server is running on port 3000
+2024-03-09 03:27:26 info: 	HTTPS server is running on port 3000
+2024-03-09 03:27:33 info: 	GET 200 / | Required Parameters: {} | Responsed Parameters: {"code":404,"message":"Not Found","data":{}} | From: ::ffff:192.168.10.102 | Ping: 3ms
+2024-03-09 03:27:40 error: 	jwt expired
+2024-03-09 03:27:40 info: 	GET 200 /example | Required Parameters: {} | Responsed Parameters: {"code":401,"massage":"Unauthorized!","data":null} | From: ::ffff:192.168.10.102 | Ping: 4ms
+2024-03-09 03:27:55 info: 	--- MongoDB connection successful ---
+2024-03-09 03:28:08 info: 	HTTPS server is running on port 3000
+2024-03-09 03:28:08 info: 	--- MongoDB connection successful ---
+2024-03-09 03:28:47 info: 	HTTPS server is running on port 3000
+2024-03-09 03:28:49 info: 	HTTPS server is running on port 3000
+2024-03-09 03:29:19 error: 	--- MongoDB connection failure ---
+2024-03-09 03:29:23 info: 	HTTPS server is running on port 3000
+2024-03-09 03:29:25 info: 	HTTPS server is running on port 3000
+2024-03-09 03:29:26 info: 	HTTPS server is running on port 3000
+2024-03-09 03:29:56 error: 	--- MongoDB connection failure ---
+2024-03-09 03:33:04 info: 	HTTPS server is running on port 3000
+2024-03-09 03:33:30 info: 	HTTPS server is running on port 3000
+2024-03-09 03:35:24 info: 	HTTPS server is running on port 3000
+2024-03-09 03:42:03 info: 	HTTPS server is running on port 3000
+2024-03-09 03:49:14 info: 	Connecting to MongoDB mongodb://128.0.0.1:27017/SGtest/
+2024-03-09 03:49:14 info: 	HTTPS server is running on port 3000
+2024-03-09 03:49:44 error: 	Failed to connect to MongoDB mongodb://128.0.0.1:27017/SGtest/ connect ETIMEDOUT 128.0.0.1:27017
+2024-03-09 03:51:08 info: 	Connecting to MongoDB mongodb://128.0.0.1:27017/SGtest/
+2024-03-09 03:51:08 info: 	HTTPS server is running on port 3000
+2024-03-09 03:51:38 error: 	Failed to connect to MongoDB mongodb://128.0.0.1:27017/SGtest/, ERROR: MongoServerSelectionError: connect ETIMEDOUT 128.0.0.1:27017
+2024-03-09 05:48:35 info: 	Connecting to MongoDB mongodb://128.0.0.1:27017/SGtest/
+2024-03-09 05:48:35 info: 	HTTPS server is running on port 3000
+2024-03-09 05:48:53 info: 	Connecting to MongoDB mongodb://128.0.0.1:27017/SGtest/
+2024-03-09 05:48:53 info: 	HTTPS server is running on port 3000
+2024-03-09 05:49:23 error: 	Failed to connect to MongoDB mongodb://128.0.0.1:27017/SGtest/, ERROR: connect ETIMEDOUT 128.0.0.1:27017
+2024-03-09 05:56:31 info: 	Connecting to MongoDB mongodb://128.0.0.1:27017/SGtest/
+2024-03-09 05:56:31 info: 	HTTPS server is running on port 3000
+2024-03-09 05:57:01 error: 	Failed to connect to MongoDB mongodb://128.0.0.1:27017/SGtest/, ERROR: connect ETIMEDOUT 128.0.0.1:27017
+2024-03-09 05:57:19 info: 	Connecting to MongoDB mongodb://128.0.0.1:27017/SGtest/
+2024-03-09 05:57:19 info: 	HTTPS server is running on port 3000
+2024-03-09 05:57:49 error: 	Failed to connect to MongoDB mongodb://128.0.0.1:27017/SGtest/, ERROR: connect ETIMEDOUT 128.0.0.1:27017
+2024-03-09 06:05:57 info: 	Connecting to MongoDB mongodb://128.0.0.1:27017/SGtest/
+2024-03-09 06:05:57 info: 	HTTPS server is running on port 3000
+2024-03-09 06:05:59 info: 	Connecting to MongoDB mongodb://128.0.0.1:27017/SGtest/
+2024-03-09 06:05:59 info: 	HTTPS server is running on port 3000
+2024-03-09 06:06:04 info: 	Connecting to MongoDB mongodb://127.0.0.1:27017/SGtest/
+2024-03-09 06:06:05 info: 	HTTPS server is running on port 3000
+2024-03-09 06:06:05 info: 	--- MongoDB connection successful ---
+2024-03-09 06:06:05 info: 	--- MongoDB connection successful ---
+2024-03-09 06:07:07 info: 	GET 200 / | Required Parameters: {} | Responsed Parameters: {"code":404,"message":"Not Found","data":{}} | From: ::ffff:192.168.10.102 | Ping: 3ms
+2024-03-09 06:18:53 info: 	Connecting to MongoDB mongodb://127.0.0.1:27017/SGtest/
+2024-03-09 06:18:53 info: 	HTTPS server is running on port 3000
+2024-03-09 06:18:53 info: 	--- MongoDB connection successful ---
+2024-03-09 06:18:53 info: 	--- MongoDB connection successful ---
+2024-03-09 06:19:13 info: 	Connecting to MongoDB mongodb://127.0.0.1:27017/SGtest/
+2024-03-09 06:19:13 info: 	HTTPS server is running on port 3000
+2024-03-09 06:19:13 info: 	--- MongoDB connection successful ---
+2024-03-09 06:19:13 info: 	--- MongoDB connection successful ---
+2024-03-09 06:21:30 info: 	Connecting to MongoDB mongodb://127.0.0.1:27017/SGtest/
+2024-03-09 06:21:30 info: 	HTTPS server is running on port 3000
+2024-03-09 06:21:30 info: 	--- MongoDB connected successful, url: mongodb://127.0.0.1:27017/SGtest/ ---
+2024-03-09 06:21:30 info: 	--- MongoDB connection successful ---
+2024-03-09 06:21:53 info: 	Connecting to MongoDB mongodb://127.0.0.1:27017/SGtest/
+2024-03-09 06:21:53 info: 	HTTPS server is running on port 3000
+2024-03-09 06:21:53 info: 	--- MongoDB connected successful, url: mongodb://127.0.0.1:27017/SGtest/ ---
+2024-03-09 06:21:53 info: 	--- MongoDB connection successful ---
+2024-03-09 06:22:37 info: 	Connecting to MongoDB mongodb://127.0.0.1:27017/SGtest/
+2024-03-09 06:22:37 info: 	HTTPS server is running on port 3000
+2024-03-09 06:22:37 info: 	--- MongoDB connected successful, url: mongodb://127.0.0.1:27017/SGtest/ ---
+2024-03-09 06:23:35 info: 	Connecting to MongoDB mongodb://127.0.0.1:27017/SGtest/
+2024-03-09 06:23:35 info: 	HTTPS server is running on port 3000
+2024-03-09 06:23:35 info: 	--- MongoDB connected successful, url: mongodb://127.0.0.1:27017/SGtest/ ---
+2024-03-09 06:24:01 info: 	Connecting to MongoDB mongodb://127.0.0.1:27017/SGtest/
+2024-03-09 06:24:02 info: 	HTTPS server is running on port 3000
+2024-03-09 06:24:02 info: 	--- MongoDB connected successful, url: mongodb://127.0.0.1:27017/SGtest/ ---
+2024-03-09 06:28:52 info: 	Connecting to MongoDB mongodb://127.0.0.1:27017/SGtest/
+2024-03-09 06:28:52 info: 	HTTPS server is running on port 3000
+2024-03-09 06:28:52 info: 	--- MongoDB connected successful, url: mongodb://127.0.0.1:27017/SGtest/ ---
+2024-03-09 06:29:43 info: 	GET 200 / | Required Parameters: {} | Responsed Parameters: {"code":404,"message":"Not Found","data":{}} | From: ::ffff:192.168.10.102 | Ping: 3ms
+2024-03-09 06:32:39 info: 	Connecting to MongoDB mongodb://127.0.0.1:27017/SGtest/
+2024-03-09 06:32:39 info: 	HTTPS server is running on port 3000
+2024-03-09 06:32:39 info: 	--- MongoDB connected successful, url: mongodb://127.0.0.1:27017/SGtest/ ---
+2024-03-09 06:33:33 info: 	Connecting to MongoDB mongodb://127.0.0.1:27017/SGtest/
+2024-03-09 06:33:33 info: 	HTTPS server is running on port 3000
+2024-03-09 06:33:33 info: 	--- MongoDB connected successful, url: mongodb://127.0.0.1:27017/SGtest/ ---
+2024-03-09 06:33:51 info: 	Connecting to MongoDB mongodb://127.0.0.1:27017/SGtest/
+2024-03-09 06:33:51 info: 	HTTPS server is running on port 3000
+2024-03-09 06:33:51 info: 	--- MongoDB connected successful, url: mongodb://127.0.0.1:27017/SGtest/ ---
+2024-03-09 06:34:21 info: 	Connecting to MongoDB mongodb://127.0.0.1:27017/SGtest/
+2024-03-09 06:34:21 info: 	HTTPS server is running on port 3000
+2024-03-09 06:34:21 info: 	--- MongoDB connected successful, url: mongodb://127.0.0.1:27017/SGtest/ ---
+2024-03-09 06:35:23 info: 	Connecting to MongoDB mongodb://127.0.0.1:27017/test/
+2024-03-09 06:35:23 info: 	HTTPS server is running on port 3000
+2024-03-09 06:35:23 info: 	--- MongoDB connected successful, url: mongodb://127.0.0.1:27017/test/ ---
+2024-03-09 06:35:29 info: 	Connecting to MongoDB mongodb://127.0.0.1:27017/test/
+2024-03-09 06:35:29 info: 	HTTPS server is running on port 3000
+2024-03-09 06:35:29 info: 	--- MongoDB connected successful, url: mongodb://127.0.0.1:27017/test/ ---
+2024-03-09 06:35:31 info: 	Connecting to MongoDB mongodb://127.0.0.1:27017/test/
+2024-03-09 06:35:31 info: 	HTTPS server is running on port 3000
+2024-03-09 06:35:31 info: 	--- MongoDB connected successful, url: mongodb://127.0.0.1:27017/test/ ---
+2024-03-09 06:36:02 info: 	Connecting to MongoDB mongodb://127.0.0.1:27017/test/
+2024-03-09 06:36:02 info: 	HTTPS server is running on port 3000
+2024-03-09 06:36:02 info: 	--- MongoDB connected successful, url: mongodb://127.0.0.1:27017/test/ ---
+2024-03-09 06:37:50 info: 	Connecting to MongoDB mongodb://127.0.0.1:27017/test/
+2024-03-09 06:37:50 info: 	HTTPS server is running on port 3000
+2024-03-09 06:37:50 info: 	--- MongoDB connected successful, url: mongodb://127.0.0.1:27017/test/ ---
+2024-03-09 06:39:53 info: 	Connecting to MongoDB mongodb://127.0.0.1:27017/test/
+2024-03-09 06:39:53 info: 	HTTPS server is running on port 3000
+2024-03-09 06:39:53 info: 	--- MongoDB connected successful, url: mongodb://127.0.0.1:27017/test/ ---
+2024-03-09 06:40:24 info: 	Connecting to MongoDB mongodb://127.0.0.1:27017/test/
+2024-03-09 06:40:24 info: 	HTTPS server is running on port 3000
+2024-03-09 06:40:24 info: 	--- MongoDB connected successful, url: mongodb://127.0.0.1:27017/test/ ---
+2024-03-09 06:40:39 info: 	Connecting to MongoDB mongodb://127.0.0.1:27017/test/
+2024-03-09 06:40:39 info: 	HTTPS server is running on port 3000
+2024-03-09 06:40:39 info: 	--- MongoDB connected successful, url: mongodb://127.0.0.1:27017/test/ ---
+2024-03-09 06:44:30 info: 	Connecting to MongoDB mongodb://127.0.0.1:27017/test/
+2024-03-09 06:44:30 info: 	HTTPS server is running on port 3000
+2024-03-09 06:44:30 info: 	--- MongoDB connected successful, url: mongodb://127.0.0.1:27017/test/ ---
+2024-03-09 06:44:35 info: 	Connecting to MongoDB mongodb://127.0.0.1:27017/test/
+2024-03-09 06:44:35 info: 	HTTPS server is running on port 3000
+2024-03-09 06:44:35 info: 	--- MongoDB connected successful, url: mongodb://127.0.0.1:27017/test/ ---
+2024-03-09 06:50:05 info: 	Connecting to MongoDB mongodb://127.0.0.1:27017/test/
+2024-03-09 06:50:05 info: 	HTTPS server is running on port 3000
+2024-03-09 06:50:05 info: 	--- MongoDB connected successful, url: mongodb://127.0.0.1:27017/test/ ---
+2024-03-09 06:59:44 info: 	Connecting to MongoDB mongodb://127.0.0.1:27017/test/
+2024-03-09 06:59:45 info: 	HTTPS server is running on port 3000
+2024-03-09 06:59:45 info: 	--- MongoDB connected successful, url: mongodb://127.0.0.1:27017/test/ ---
+2024-03-09 07:08:18 error: 	jwt expired
+2024-03-09 07:08:18 info: 	GET 200 /example | Required Parameters: {} | Responsed Parameters: {"code":401,"massage":"Unauthorized!","data":null} | From: ::ffff:192.168.10.102 | Ping: 4ms
+2024-03-09 07:10:56 info: 	Connecting to MongoDB mongodb://127.0.0.1:27017/test/
+2024-03-09 07:10:56 info: 	HTTPS server is running on port 3000
+2024-03-09 07:10:56 info: 	--- MongoDB connected successful, url: mongodb://127.0.0.1:27017/test/ ---
+2024-03-09 07:11:08 info: 	Connecting to MongoDB mongodb://127.0.0.1:27017/test/
+2024-03-09 07:11:08 info: 	HTTPS server is running on port 3000
+2024-03-09 07:11:08 info: 	--- MongoDB connected successful, url: mongodb://127.0.0.1:27017/test/ ---
+2024-03-09 07:27:30 info: 	POST 200 / | Required Parameters: {"account":"account","password":"password"} | Responsed Parameters: {"code":200,"message":"Test success!","data":{"Token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDk5NDQwNTAsImRhdGEiOnsidXNlciI6ImFjY291bnQiLCJwd2QiOiJwYXNzd29yZCJ9LCJpYXQiOjE3MDk5NDA0NTB9.kq5EGRkfMWa5E2KwnR1nqVMNl1aIPUkFeU5hVk8YrS0"}} | From: ::ffff:192.168.10.102 | Ping: 5ms
