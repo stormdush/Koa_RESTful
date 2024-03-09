@@ -4,6 +4,7 @@
   "author": "Kay",
   "private": true,
   "scripts": {
+    "init": "initData.js --NODE_ENV=debug",
     "start": "nodemon app.js --NODE_ENV=debug",
     "dev": "pm2 start ecosystem.config.js --env dev",
     "test": "pm2 start ecosystem.config.js --env test",

@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const { logger } = require('../middlewares/logger');
 
 const connectDB = (dbconfig) => {
-    const url = `mongodb://${dbconfig.host}:${dbconfig.port}/${dbconfig.db}/`;
+    const url = `mongodb://${dbconfig.host}:${dbconfig.port}/${dbconfig.db}`;
     // connect mongoDB
     try {
         mongoose.connect(url);
