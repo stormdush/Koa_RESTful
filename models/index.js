@@ -12,7 +12,7 @@ files.forEach((file) => {
     const obj = require(`./${file}`);
     
     console.log(obj);
-    constmongoose.model(obj.name, schema);
+    // const schema = new mongoose.model(obj.name, schema);
     models[`${file.replace(/\.js/, '')}`] = obj;
 });
 

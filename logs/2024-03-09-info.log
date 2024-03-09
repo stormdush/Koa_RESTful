@@ -156,3 +156,9 @@
 2024-03-09 08:09:25 info: 	Connecting to MongoDB mongodb://127.0.0.1:27017/test/
 2024-03-09 08:09:25 info: 	HTTPS server is running on port 3000
 2024-03-09 08:09:25 info: 	--- MongoDB connected successful, url: mongodb://127.0.0.1:27017/test/ ---
+2024-03-09 08:11:12 info: 	Connecting to MongoDB mongodb://127.0.0.1:27017/test/
+2024-03-09 08:11:12 info: 	HTTPS server is running on port 3000
+2024-03-09 08:11:12 info: 	--- MongoDB connected successful, url: mongodb://127.0.0.1:27017/test/ ---
+2024-03-09 08:36:15 info: 	Connecting to MongoDB mongodb://127.0.0.1:27017/test/
+2024-03-09 08:36:15 info: 	HTTPS server is running on port 3000
+2024-03-09 08:36:15 info: 	--- MongoDB connected successful, url: mongodb://127.0.0.1:27017/test/ ---
