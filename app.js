@@ -16,8 +16,8 @@ const mongoDB = require('./db/mongoDB');
 const models = require('./models');
 
 const app = new Koa();
-console.log('================', models);
 mongoDB(config.mongoDB);
+console.log(models);
 
 // Create static cache
 app.use(staticCache(config.publicCache, {

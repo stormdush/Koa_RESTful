@@ -10,7 +10,9 @@ const files = fs.readdirSync(__dirname).filter(file => file !== 'index.js');
 // Iterate through the files
 files.forEach((file) => {
     const obj = require(`./${file}`);
+    
     console.log(obj);
+    constmongoose.model(obj.name, schema);
     models[`${file.replace(/\.js/, '')}`] = obj;
 });
 

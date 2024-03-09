@@ -147,3 +147,12 @@
 2024-03-09 07:11:08 info: 	HTTPS server is running on port 3000
 2024-03-09 07:11:08 info: 	--- MongoDB connected successful, url: mongodb://127.0.0.1:27017/test/ ---
 2024-03-09 07:27:30 info: 	POST 200 / | Required Parameters: {"account":"account","password":"password"} | Responsed Parameters: {"code":200,"message":"Test success!","data":{"Token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDk5NDQwNTAsImRhdGEiOnsidXNlciI6ImFjY291bnQiLCJwd2QiOiJwYXNzd29yZCJ9LCJpYXQiOjE3MDk5NDA0NTB9.kq5EGRkfMWa5E2KwnR1nqVMNl1aIPUkFeU5hVk8YrS0"}} | From: ::ffff:192.168.10.102 | Ping: 5ms
+2024-03-09 08:06:11 info: 	Connecting to MongoDB mongodb://127.0.0.1:27017/test/
+2024-03-09 08:06:11 info: 	HTTPS server is running on port 3000
+2024-03-09 08:06:11 info: 	--- MongoDB connected successful, url: mongodb://127.0.0.1:27017/test/ ---
+2024-03-09 08:06:35 info: 	Connecting to MongoDB mongodb://127.0.0.1:27017/test/
+2024-03-09 08:06:35 info: 	HTTPS server is running on port 3000
+2024-03-09 08:06:35 info: 	--- MongoDB connected successful, url: mongodb://127.0.0.1:27017/test/ ---
+2024-03-09 08:09:25 info: 	Connecting to MongoDB mongodb://127.0.0.1:27017/test/
+2024-03-09 08:09:25 info: 	HTTPS server is running on port 3000
+2024-03-09 08:09:25 info: 	--- MongoDB connected successful, url: mongodb://127.0.0.1:27017/test/ ---
