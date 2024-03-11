@@ -1,6 +1,6 @@
 'use strict';
 module.exports = {
-    name: 'user',
+    name: 'administrator',
     schema: {
         username: {
             type: String,

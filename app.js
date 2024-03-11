@@ -10,14 +10,14 @@ const session = require('koa-session');
 const staticCache = require('koa-static-cache');
 const favicon = require('koa-favicon');
 const bodyParser = require('koa-bodyparser');
-const privateRouter = require('./routers/private');
+const apiRouter = require('./routers/api');
 const publicRouter = require('./routers/public');
 const mongoDB = require('./db/mongoDB');
-const models = require('./models');
+const autoModels = require('./middlewares/autoModels');
 
 const app = new Koa();
 mongoDB(config.mongoDB);
-console.log(models);
+
 
 // Create static cache
 app.use(staticCache(config.publicCache, {
@@ -25,6 +25,8 @@ app.use(staticCache(config.publicCache, {
     maxAge: 0,
     prefix: '/static'
 }));
+
+// app.use(autoModels);
 
 // Set icon
 app.use(favicon('./static/favicon.ico'));
@@ -38,7 +40,7 @@ app.use(errorCatcher);
 app.use(helmet());
 app.use(corsControl);
 
-app.use(privateRouter.routes(), privateRouter.allowedMethods());
+app.use(apiRouter.routes(), apiRouter.allowedMethods());
 app.use(publicRouter.routes(), publicRouter.allowedMethods());
 
 // Add resp middleware below routes

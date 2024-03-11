@@ -2,30 +2,48 @@
 const config = require('config');
 const mongoose = require('mongoose');
 
-const url = "mongodb://" + config.mongoDB.host + ":" + config.mongoDB.port + "/" + config.mongoDB.db;
+const url =
+    'mongodb://' +
+    config.mongoDB.host +
+    ':' +
+    config.mongoDB.port +
+    '/' +
+    config.mongoDB.db;
 
 mongoose.connect(url);
 const db = mongoose.connection;
 
 const Administrator = mongoose.model('Administrator', {
-    name: String,
-    password: String
+    username: {
+        type: String,
+        required: true,
+        unique: true,
+    },
+    password: {
+        type: String,
+    },
 });
 
 const User = mongoose.model('User', {
-    name: String,
-    password: String
+    username: {
+        type: String,
+        required: true,
+        unique: true,
+    },
+    password: {
+        type: String,
+    },
 });
 
 // Create administrators and user collections
 const Administrators = new Administrator({
-    name: 'admin',
-    password: 'pwd'
+    username: 'admin',
+    password: 'pwd',
 });
 
 const Users = new User({
-    name: 'user',
-    password: 'pwd'
+    username: 'user',
+    password: 'pwd',
 });
 
 mongoose.connect(url);
@@ -46,8 +64,8 @@ db.on('connected', () => {
         })
         .catch((err) => {
             console.error('Saving administrators error::', err);
-        }).finally(() => {
+        })
+        .finally(() => {
             mongoose.connection.close();
         });
 });
-
