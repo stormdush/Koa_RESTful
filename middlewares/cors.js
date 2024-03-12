@@ -10,7 +10,11 @@ const corsControl = cors({
         }
         return '*';
     },
-    exposeHeaders: ['WWW-Authenticate', 'Server-Authorization'],
+    exposeHeaders: [
+        'WWW-Authenticate',
+        'Server-Authorization',
+        'Authorization',
+    ],
     maxAge: 5,
     credentials: true,
     allowMethods: ['GET', 'POST', 'DELETE'],
@@ -18,8 +22,8 @@ const corsControl = cors({
 });
 
 module.exports = {
-    corsControl
-}
+    corsControl,
+};
 
 // Options
 // origin

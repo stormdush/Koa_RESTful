@@ -6,7 +6,10 @@ const administrator = require('../models/administrator');
 
 const login = async (ctx, next) => {
     const { username, password } = ctx.request.body;
-
+    ctx.set(
+        'Access-Control-Expose-Headers',
+        'WWW-Authenticate, Server-Authorization, Authorization'
+    );
     try {
         const administratorSchema = new mongoose.Schema(administrator.schema);
 
@@ -16,7 +19,6 @@ const login = async (ctx, next) => {
         );
 
         const adminUser = await Administrator.findOne({ username, password });
-        console.log(adminUser);
         if (adminUser) {
             // 如果找到管理员用户，生成 JWT Token
             const token = jwt.sign(
@@ -40,7 +42,6 @@ const login = async (ctx, next) => {
             throw { code: 401, message: 'Unauthorized!' };
         }
     } catch (error) {
-        console.error('Error while querying database:', error);
         throw { code: 500, message: 'Internal Server Error' };
     }
 };
