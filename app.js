@@ -12,19 +12,22 @@ const favicon = require('koa-favicon');
 const bodyParser = require('koa-bodyparser');
 const apiRouter = require('./routers/api');
 const publicRouter = require('./routers/public');
-const mongoDB = require('./db/mongoDB');
-const autoModels = require('./middlewares/autoModels');
+const { loadModels, connectDB } = require('./db/mongoDB');
 
 const app = new Koa();
-mongoDB(config.mongoDB);
 
+// Connect MongoDB and load schema
+connectDB(config.mongoDB);
+loadModels(`${__dirname}/models`);
 
 // Create static cache
-app.use(staticCache(config.publicCache, {
-    gzip: true,
-    maxAge: 0,
-    prefix: '/static'
-}));
+app.use(
+    staticCache(config.publicCache, {
+        gzip: true,
+        maxAge: 0,
+        prefix: '/static',
+    })
+);
 
 // app.use(autoModels);
 
@@ -49,7 +52,7 @@ app.use(responseData);
 // Set session
 app.keys = ['KOA RESTful'];
 app.use(session(config.session, app));
-app.use(ctx => {
+app.use((ctx) => {
     // ignore faviconk
     if (ctx.path === '/favicon.ico') return;
     let n = ctx.session.views || 0;
@@ -67,8 +70,8 @@ if (config.https) {
 
     // This is a link to create SSL Cert and Key for testing https://www.lddgo.net/encrypt/ssl
     const options = {
-        key: fs.readFileSync('./pems/private.key'),  // Private key path
-        cert: fs.readFileSync('./pems/cert.pem')  // Certificatepath
+        key: fs.readFileSync('./pems/private.key'), // Private key path
+        cert: fs.readFileSync('./pems/cert.pem'), // Certificatepath
     };
 
     // Create https server

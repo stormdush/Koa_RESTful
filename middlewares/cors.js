@@ -3,22 +3,17 @@ const cors = require('koa2-cors');
 
 // Create cors middleware
 const corsControl = cors({
-    origin: (ctx) => {
-        if (ctx.url === '/test') {
-            // Configure address does not run cross-domain
-            return false;
-        }
-        return '*';
-    },
+    origin: '*',
     exposeHeaders: [
         'WWW-Authenticate',
         'Server-Authorization',
         'Authorization',
+        'SessionID',
     ],
     maxAge: 5,
     credentials: true,
-    allowMethods: ['GET', 'POST', 'DELETE'],
-    allowHeaders: ['Content-Type', 'Authorization', 'Accept'],
+    allowMethods: ['GET', 'POST'],
+    allowHeaders: ['Content-Type', 'Authorization', 'Accept', 'SessionID'],
 });
 
 module.exports = {

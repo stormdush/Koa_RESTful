@@ -1,6 +1,22 @@
 'use strict';
 const mongoose = require('mongoose');
+const fs = require('fs');
+const path = require('path');
 const { logger } = require('../middlewares/logger');
+
+async function loadModels(directory) {
+    const files = fs.readdirSync(directory);
+
+    files.forEach((file) => {
+        const filePath = path.join(directory, file);
+        const model = require(filePath);
+
+        // Create models
+        const schema = new mongoose.Schema(model.schema);
+        mongoose.model(model.name, schema);
+        logger.info(`Loaded model ${model.name}`);
+    });
+}
 
 const connectDB = (dbconfig) => {
     const url = `mongodb://${dbconfig.host}:${dbconfig.port}/${dbconfig.db}`;
@@ -9,7 +25,9 @@ const connectDB = (dbconfig) => {
         mongoose.connect(url);
         logger.info(`Connecting to MongoDB ${url}`);
     } catch (err) {
-        logger.error(`Failed to connect to MongoDB ${url}, ERROR: ${err.message}`);
+        logger.error(
+            `Failed to connect to MongoDB ${url}, ERROR: ${err.message}`
+        );
     }
 
     // Listen connection status
@@ -44,7 +62,6 @@ const connectDB = (dbconfig) => {
     // closeConnection#close()：成功关闭连接后发出。如果您致电conn.close()，您将同时收到“断开连接”事件和“关闭”事件。
     // reconnected：如果 Mongoose 失去与 MongoDB 的连接并成功重新连接，则发出。Mongoose在失去与数据库的连接时会尝试自动重新连接。
     // error：如果连接发生错误（例如parseError由于数据格式错误或有效负载大于16MB） ，则发出该错误。
+};
 
-}
-
-module.exports = connectDB;
+module.exports = { loadModels, connectDB };

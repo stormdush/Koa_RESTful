@@ -3,10 +3,6 @@ const { logger } = require('./logger');
 
 // Create response-data-style { code: 0, message: any data: any }, ctx.data is neressary
 const responseData = async (ctx, next) => {
-    ctx.set(
-        'Access-Control-Expose-Headers',
-        'WWW-Authenticate, Server-Authorization, Authorization'
-    );
     if (ctx.data !== undefined) {
         ctx.type = 'json';
         ctx.body = {
@@ -28,10 +24,6 @@ const responseData = async (ctx, next) => {
 
 // Catch exceptions and return massage
 const errorCatcher = (ctx, next) => {
-    ctx.set(
-        'Access-Control-Expose-Headers',
-        'WWW-Authenticate, Server-Authorization, Authorization'
-    );
     return next().catch((err) => {
         if (err.code === undefined) {
             logger.error(err.stack);
