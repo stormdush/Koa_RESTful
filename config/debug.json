@@ -9,7 +9,7 @@
         "db": "test"
     },
     "session": {
-        "key": "KOA RESTful",
+        "key": "KOA",
         "maxAge": 86400000,
         "autoCommit": true,
         "overwrite": true,

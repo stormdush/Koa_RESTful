@@ -33,6 +33,9 @@ const User = mongoose.model('User', {
     password: {
         type: String,
     },
+    tel: {
+        type: String,
+    },
 });
 
 // Create administrators and user collections
@@ -41,16 +44,24 @@ const Administrators = new Administrator({
     password: 'pwd',
 });
 
-const Users = new User({
-    username: 'user',
-    password: 'pwd',
-});
+const users = [
+    {
+        username: 'user1',
+        password: 'pwd1',
+        tel: '18611112222',
+    },
+    {
+        username: 'user2',
+        password: 'pwd2',
+        tel: '18611113333',
+    },
+];
 
 mongoose.connect(url);
 
 db.on('connected', () => {
     console.log(`--- MongoDB connected successful, url: ${url} ---`);
-    Users.save()
+    User.insertMany(users)
         .then(() => {
             console.log('Saving users successed');
         })

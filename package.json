@@ -1,32 +1,32 @@
 {
-  "name": "koa2vue3template",
-  "version": "1.0.0",
-  "author": "Kay",
-  "private": true,
-  "scripts": {
-    "init": "initData.js --NODE_ENV=debug",
-    "start": "nodemon app.js --NODE_ENV=debug",
-    "dev": "pm2 start ecosystem.config.js --env dev",
-    "test": "pm2 start ecosystem.config.js --env test",
-    "pro": "pm2 start ecosystem.config.js --env pro",
-    "logs": "pm2 logs"
-  },
-  "dependencies": {
-    "config": "^3.3.11",
-    "jsonwebtoken": "^9.0.2",
-    "koa": "^2.15.0",
-    "koa-bodyparser": "^4.4.1",
-    "koa-favicon": "^2.1.0",
-    "koa-helmet": "^7.0.2",
-    "koa-logger": "^3.2.1",
-    "koa-mongo": "^1.9.3",
-    "koa-router": "^12.0.1",
-    "koa-session": "^6.4.0",
-    "koa-sslify": "^5.0.1",
-    "koa-static-cache": "^5.1.4",
-    "koa2-cors": "^2.0.6",
-    "mongoose": "^8.2.1",
-    "winston": "^3.11.0",
-    "winston-daily-rotate-file": "^5.0.0"
-  }
+    "name": "koa2vue3template",
+    "version": "1.0.0",
+    "author": "Kay",
+    "private": true,
+    "scripts": {
+        "init": "initData.js --NODE_ENV=debug",
+        "start": "nodemon app.js --NODE_ENV=debug",
+        "dev": "pm2 start ecosystem.config.js --env dev",
+        "test": "pm2 start ecosystem.config.js --env test",
+        "pro": "pm2 start ecosystem.config.js --env pro",
+        "logs": "pm2 logs"
+    },
+    "dependencies": {
+        "config": "^3.3.11",
+        "jsonwebtoken": "^9.0.2",
+        "koa": "^2.15.0",
+        "koa-bodyparser": "^4.4.1",
+        "koa-favicon": "^2.1.0",
+        "koa-helmet": "^7.0.2",
+        "koa-logger": "^3.2.1",
+        "koa-mongo": "^1.9.3",
+        "koa-router": "^12.0.1",
+        "koa-session": "^6.4.0",
+        "koa-sslify": "^5.0.1",
+        "koa-static-cache": "^5.1.4",
+        "koa2-cors": "^2.0.6",
+        "mongoose": "^8.2.1",
+        "winston": "^3.11.0",
+        "winston-daily-rotate-file": "^5.0.0"
+    }
 }

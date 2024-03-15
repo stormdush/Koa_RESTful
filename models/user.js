@@ -10,5 +10,8 @@ module.exports = {
         password: {
             type: String,
         },
+        tel: {
+            type: String,
+        },
     },
 };

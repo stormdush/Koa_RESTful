@@ -50,8 +50,10 @@ app.use(publicRouter.routes(), publicRouter.allowedMethods());
 app.use(responseData);
 
 // Set session
-app.keys = ['KOA RESTful'];
+app.keys = ['KOA'];
+
 app.use(session(config.session, app));
+
 app.use((ctx) => {
     // ignore faviconk
     if (ctx.path === '/favicon.ico') return;

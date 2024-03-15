@@ -6,6 +6,6 @@ const jwtVerify = require('../middlewares/jwt');
 const router = new Router();
 
 router.use(jwtVerify);
-router.post('/login', controllers.login);
+router.get('/user', controllers.user);
 
 module.exports = router;

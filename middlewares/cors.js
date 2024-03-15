@@ -3,7 +3,7 @@ const cors = require('koa2-cors');
 
 // Create cors middleware
 const corsControl = cors({
-    origin: '*',
+    origin: 'https://192.168.10.101:8000', // If you want to send cookies, Access-Control-Allow-Origin cannot be set to '*'.
     exposeHeaders: [
         'WWW-Authenticate',
         'Server-Authorization',
@@ -13,7 +13,7 @@ const corsControl = cors({
     maxAge: 5,
     credentials: true,
     allowMethods: ['GET', 'POST'],
-    allowHeaders: ['Content-Type', 'Authorization', 'Accept', 'SessionID'],
+    allowHeaders: ['Content-Type', 'Authorization', 'Accept', 'SessionID']
 });
 
 module.exports = {
